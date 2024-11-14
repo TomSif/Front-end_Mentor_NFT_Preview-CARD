@@ -1,0 +1,89 @@
+/* outfit-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../src/_fonts/outfit-v11-latin-300.woff2") format("woff2");
+}
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/_fonts/outfit-v11-latin-regular.woff2") format("woff2");
+}
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/_fonts/outfit-v11-latin-600.woff2") format("woff2");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------
+   Custom Classes
+-------------------------------------------- */
+/* Hover image  */
+.hover-image:hover::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(215, 51%, 70%);
+  content: "";
+  position: absolute;
+  opacity: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.hover-image:hover::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icon-view.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+/* Icons before titles */
+.icon-h2::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 18px;
+  background-image: url("../images/icon-ethereum.svg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 0.3125rem;
+  position: absolute;
+  top: 0.2rem;
+  left: -1rem;
+}
+
+.icon-h3::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../images/icon-clock.svg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 0.3rem;
+  top: 0.25rem;
+  left: -1.5rem;
+}

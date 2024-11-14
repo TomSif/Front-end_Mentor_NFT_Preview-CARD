@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front end exercise: a simple card project to learn sass and tailwind."
+    />
+    <meta
+      name="keywords"
+      content="web development, frontendmentor, html, css, javascript, Sass, tailwwind, NFT"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body
+    class="flex justify-center items-center h-screen font-outfit text-lg bg-neutral-db-main"
+  >
+    <main class="w-[20.4375rem] h-[34rem] bg-neutral-db-card p-6 rounded-2xl">
+      <div class="hover-image relative w-[17.4rem] h-[17.4rem] rounded-lg">
+        <img
+          src="../images/image-equilibrium.jpg"
+          alt="Decorative image of a cube"
+          class="w-[17.4rem] h-[17.4rem] rounded-lg"
+        />
+      </div>
+      <h1
+        class="hover:text-primary-cyan cursor-pointer font-bold pt-6 text-xl tracking-[0.07rem] text-white"
+      >
+        Equilibrium #3429
+      </h1>
+      <p class="pt-3 text-primary-blue font-light text-base leading-[1.5rem]">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div
+        class="flex flex-row align-bottom justify-between pt-[1.05rem] pl-[1.12rem] pb-[0.25rem]"
+      >
+        <h2
+          class="icon-h2 w-[auto] text-primary-cyan font-bold text-base relative"
+        >
+          0.041 ETH
+        </h2>
+        <h3
+          class="icon-h3 w-[auto] text-primary-blue font-light text-base relative"
+        >
+          3 days left
+        </h3>
+      </div>
+      <div
+        class="inline-flex border-t mt-3 border-t-neutral-db-line pt-4 w-[100%]"
+      >
+        <img
+          class="w-[1.95rem] h-[1.95rem] rounded-full border border-white mr-4"
+          src="../images/image-avatar.png"
+          alt="image-avatar"
+        />
+        <h4
+          class="text-white hover:text-primary-cyan cursor-pointer font-light text-base mt-[0.15rem]"
+        >
+          <span class="text-primary-blue">Creation of</span>
+          Jules Wyvern
+        </h4>
+      </div>
+    </main>
+  </body>
+</html>
